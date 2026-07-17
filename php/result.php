@@ -274,7 +274,7 @@ $comment_list_data = get_comments_by_survey_id((int)$survey_id);
                         </button>
                     <?php else:?>
                         <p class="mt-2 border border-gray-300 px-3 py-1 rounded-full text-sm lift-button">
-                            👍 ログイン後有効 <span id="like-count-<?= (int)$row['comment_id'] ?>"><?= $row["like_count"] ?? 0 ?></span>
+                            👍 <span id="like-count-<?= (int)$row['comment_id'] ?>"><?= $row["like_count"] ?? 0 ?> ログイン後有効</span>
                         </p>
                     <?php endif?>
                 </div>
